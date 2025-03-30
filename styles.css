@@ -1,0 +1,162 @@
+/* General Styling */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #282c34;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+}
+
+h1, h2 {
+    text-align: center;
+}
+
+.hero {
+    margin-top: 50px;
+    text-align: center;
+}
+
+/* Timer Styling */
+.timer {
+    font-size: 4rem;
+    font-weight: bold;
+    margin: 20px 0;
+}
+
+/* Button Styling */
+button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    font-size: 1rem;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+/* Task Buttons */
+.task-buttons {
+    display: flex;
+    gap: 10px;
+}
+
+.task-btn {
+    background-color: #333;
+}
+
+.task-btn:hover {
+    background-color: #555;
+}
+
+/* Progress Panel */
+.progress-panel {
+    margin-top: 30px;
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 15px;
+    border-radius: 15px;
+    width: 80%;
+    text-align: center;
+}
+
+/* Settings Button */
+#settings-btn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #444;
+    padding: 12px;
+    border-radius: 50%;
+    font-size: 24px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+#settings-btn:hover {
+    background-color: #555;
+}
+
+/* Settings Panel */
+#settings-panel {
+    position: fixed;
+    bottom: 80px;
+    right: 20px;
+    background-color: #333;
+    padding: 15px;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    z-index: 10;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+    transform: translateY(20px);
+    opacity: 0;
+    visibility: hidden;
+}
+
+#settings-panel.show {
+    transform: translateY(0);
+    opacity: 1;
+    visibility: visible;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+}
+
+#close-settings {
+    background-color: #555;
+    margin-top: 10px;
+}
+
+#close-settings:hover {
+    background-color: #666;
+}
+
+/* Settings Panel
+.settings {
+    margin-top: 20px;
+}
+
+#settings-panel {
+    display: flex;
+    flex-direction: column;
+    background-color: #444;
+    padding: 20px;
+    border-radius: 10px;
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}*/
+
+.hidden {
+    display: none;
+
+/* Quiz Modal */
+.modal {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #333;
+    padding: 20px;
+    border-radius: 12px;
+    width: 300px;
+    text-align: center;
+}
+
+#quiz-result {
+    font-size: 1rem;
+    margin-top: 12px;
+    color: #4CAF50;
+    transition: opacity 0.3s ease;
+    opacity: 0;
+}

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Focus Timer</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="hero">
+        <h1>Master Your Focus, One Session at a Time.</h1>
+        <div class="timer">
+            <span id="minutes">25</span>:<span id="seconds">00</span>
+        </div>
+        <button id="start-btn">Start Timer</button>
+        <button id="quiz-btn">Not sure which focus style to use? Take the Quiz!</button>
+    </div>
+
+    <div class="task-section">
+        <h2>What are you working on?</h2>
+        <div class="task-buttons">
+            <button class="task-btn" data-time="45">🧠 Creative Work</button>
+            <button class="task-btn" data-time="30">📚 Memorization</button>
+            <button class="task-btn" data-time="15">⚡ Quick Tasks</button>
+            <button class="task-btn" data-time="60">🎯 Deep Focus</button>
+        </div>
+    </div>
+
+    <div class="progress-panel">
+        <p id="progress-message">Start a session to see your progress!</p>
+    </div>
+
+    <!-- Quiz Modal -->
+    <div id="quiz-modal" class="modal hidden">
+        <div class="modal-content">
+            <h2>Find Your Focus Style</h2>
+            <p>Answer a few quick questions to get a recommended technique!</p>
+            <div id="quiz-questions"></div>
+            <button id="submit-quiz">Get Recommendation</button>
+            <button id="close-quiz">Close</button>
+            <p id="quiz-result" class="hidden"></p>
+        </div>
+    </div>
+
+    <!-- Background and Sound Settings -->
+    <div class="settings">
+        <button id="settings-btn">⚙️ Settings</button>
+        <div id="settings-panel" class="hiddens">
+            <label>Background:
+                <input type="color" id="bg-color-picker">
+            </label>
+            <label>Sound:
+                <select id="sound-selector">
+                    <option value="none">None</option>
+                    <option value="rain">Rain</option>
+                    <option value="lofi">Lo-fi</option>
+                    <option value="forest">Forest</option>
+                </select>
+            </label>
+            <button id="close-settings">Close</button>
+        </div>
+    </div>
+
+    <canvas id="confetti-canvas"></canvas>
+
+    <script src="script.js"></script>
+</body>
+</html>
